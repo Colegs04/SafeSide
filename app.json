@@ -1,0 +1,32 @@
+{
+  "expo": {
+    "name": "SafeSide",
+    "slug": "safeside-assistant",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.student.safeside"
+    },
+    "android": {
+      "package": "com.student.safeside"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "cameraPermission": "Allow SafeSide to capture incident evidence.",
+          "photosPermission": "Allow SafeSide to select incident evidence.",
+          "microphonePermission": false
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Allow SafeSide to attach your location to incidents."
+        }
+      ]
+    ]
+  }
+}
